@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veba Travels - Corporate Car Hire Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Veba Travels</div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#inquiry-form">Book Trip</a>
+            <a href="#travel-packages">Travel Packs</a>
+            <a href="#tariff">Tariff</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">        
+        <img src="hero-image.png" alt="Hero Image" class="hero-image">
+        <div class="hero-content">
+            <h1>Welcome to Veba Travels</h1>
+            <p>Your Journey, Our Commitment</p>
+        </div>        
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Veba Travels offers premium car hire services with skilled drivers across India, ensuring reliable and safe travel for corporate clients.</p>
+    </section>
+
+    <!-- Fleet Gallery Section -->
+    <section id="fleet-gallery">
+        <h2>Our Fleet</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/250x150" alt="Sedan">
+                <p>Sedan - Comfortable for city travel</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/250x150" alt="SUV">
+                <p>SUV - Spacious for group travel</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/250x150" alt="Luxury">
+                <p>Luxury - Premium experience for executives</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">Corporate Car Hire</div>
+        <div class="service-item">Experienced Chauffeurs</div>
+        <div class="service-item">Nationwide Coverage</div>
+    </section>
+
+    <!-- Inquiry Form Section -->
+    <section id="inquiry-form">
+        <h2>Book Your Trip</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+    
+            <label for="date">Date of Travel:</label>
+            <input type="date" id="date" name="date" required>
+    
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="return-date">
+    
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" name="passengers" min="1" required>
+    
+            <label for="message">Additional Details:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit" class="btn-primary">Submit Inquiry</button>
+        </form>
+    </section>
+
+    <!-- Travel Packages Section -->
+    <section id="travel-packages">
+        <h2>Travel Packages</h2>
+        <div class="package-card" onclick="togglePackage('genz-trips')">
+            <h3>Gen Z Trips</h3>
+            <div id="genz-trips" class="package-details">
+                <p>Adventure in Hyderabad</p>
+                <p>Nightlife in Bangalore</p>
+                <p>Coastal Escape in Chennai</p>
+            </div>
+        </div>
+        <div class="package-card" onclick="togglePackage('millennial-trips')">
+            <h3>Millennial Trips</h3>
+            <div id="millennial-trips" class="package-details">
+                <p>Culture Tour in Mumbai</p>
+                <p>Food and Wine in Hyderabad</p>
+                <p>Beach Getaway in Vizag</p>
+            </div>
+        </div>
+        <div class="package-card" onclick="togglePackage('religious-trips')">
+            <h3>Religious Trips</h3>
+            <div id="religious-trips" class="package-details">
+                <p>Spiritual Hyderabad</p>
+                <p>Temples of Chennai</p>
+                <p>Pilgrimage in Warangal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tariff Section -->
+    <section id="tariff">
+        <h2>Tariff</h2>
+        <p>We offer competitive and transparent pricing. Contact us for custom corporate packages and discounts.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out for any queries or bookings.</p>
+        <div class="contact-buttons">
+            <a href="https://wa.me/yourphonenumber" class="btn-whatsapp">WhatsApp Us</a>
+            <a href="tel:yourphonenumber" class="btn-call">Call Us</a>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map">
+        <h2>Service Locations</h2>
+        <p>Explore our locations across India on the map below.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.84460304376!2d78.26795759780846!3d17.412348700390154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91cdb2a5eb0f%3A0xf9e26ed7ef302ba4!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1617195126704!5m2!1sen!2sin"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- News Section -->
+    <section id="news">
+        <h2>Latest Car News</h2>
+        <div class="news-item">
+            <h3>2024's Most Anticipated Car Models</h3>
+            <p>Explore the top new car models set to hit the roads this year...</p>
+            <a href="#" class="btn-secondary">Read More</a>
+        </div>
+        <div class="news-item">
+            <h3>Benefits of Corporate Car Hire</h3>
+            <p>How corporate car hire services can help businesses optimize their travel...</p>
+            <a href="#" class="btn-secondary">Read More</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Veba Travels. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function togglePackage(id) {
+            const details = document.getElementById(id);
+            details.style.display = details.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>
